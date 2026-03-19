@@ -1,19 +1,48 @@
-# 🎈 Blank app template
+# Blank App
 
-A simple Streamlit app template for you to modify!
+A new repository ready for development.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Getting Started
 
-### How to run it on your own machine
+### Prerequisites
 
-1. Install the requirements
+- Python 3.8+
+- pip
 
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd blank-app
    ```
-   $ pip install -r requirements.txt
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
    ```
 
-2. Run the app
+3. Run the app:
 
+   ```bash
+   streamlit run streamlit_app.py
    ```
-   $ streamlit run streamlit_app.py
-   ```
+
+## Project Structure
+
+```
+blank-app/
+├── .devcontainer/     # Dev container configuration
+├── .github/           # GitHub workflows and configuration
+├── .gitignore         # Git ignore rules
+├── LICENSE            # Apache 2.0 License
+├── README.md          # This file
+├── requirements.txt   # Python dependencies
+└── streamlit_app.py   # Main application entry point
+```
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.

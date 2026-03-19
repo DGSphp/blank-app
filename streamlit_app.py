@@ -1,6 +1,12 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.set_page_config(page_title="Blank App", page_icon="🚀", layout="centered")
+
+st.title("🚀 Blank App")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Welcome to your new app! Start building by editing `streamlit_app.py`."
+)
+st.write(
+    "For help and inspiration, head over to "
+    "[docs.streamlit.io](https://docs.streamlit.io/)."
 )
