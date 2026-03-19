@@ -1,48 +1,46 @@
-# Blank App
+# Gemini → Claude Data Transfer
 
-A new repository ready for development.
+A Streamlit webapp that transfers data from Google Gemini to Anthropic Claude. Send a prompt to Gemini, review the response, then transfer it to Claude for further analysis, refinement, or comparison.
+
+## Features
+
+- **Transfer Mode** — Query Gemini, then forward the response to Claude with custom instructions
+- **Direct Compare** — Send the same prompt to both models side by side
+- **History** — Review all past transfers in one place
 
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.8+
-- pip
+- A [Google Gemini API key](https://aistudio.google.com/apikey)
+- An [Anthropic Claude API key](https://console.anthropic.com/settings/keys)
 
 ### Installation
 
-1. Clone the repository:
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   git clone <repository-url>
-   cd blank-app
-   ```
+### Run
 
-2. Install dependencies:
+```bash
+streamlit run streamlit_app.py
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the app:
-
-   ```bash
-   streamlit run streamlit_app.py
-   ```
+Enter your API keys in the sidebar and start transferring data.
 
 ## Project Structure
 
 ```
 blank-app/
-├── .devcontainer/     # Dev container configuration
-├── .github/           # GitHub workflows and configuration
-├── .gitignore         # Git ignore rules
-├── LICENSE            # Apache 2.0 License
-├── README.md          # This file
-├── requirements.txt   # Python dependencies
-└── streamlit_app.py   # Main application entry point
+├── streamlit_app.py    # Main Streamlit UI
+├── gemini_client.py    # Google Gemini API wrapper
+├── claude_client.py    # Anthropic Claude API wrapper
+├── requirements.txt    # Python dependencies
+└── LICENSE             # Apache 2.0
 ```
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+Apache License 2.0 — see [LICENSE](LICENSE).
